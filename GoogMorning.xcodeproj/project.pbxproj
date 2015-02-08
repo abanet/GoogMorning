@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3834F991A879120005D1C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3834F981A879120005D1C19 /* AppDelegate.swift */; };
+		D3834F9B1A879120005D1C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3834F9A1A879120005D1C19 /* ViewController.swift */; };
+		D3834F9E1A879120005D1C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3834F9C1A879120005D1C19 /* Main.storyboard */; };
+		D3834FA01A879120005D1C19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3834F9F1A879120005D1C19 /* Images.xcassets */; };
+		D3834FA31A879120005D1C19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3834FA11A879120005D1C19 /* LaunchScreen.xib */; };
+		D3834FAF1A879120005D1C19 /* GoogMorningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3834FAE1A879120005D1C19 /* GoogMorningTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3834FA91A879120005D1C19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3834F8B1A879120005D1C19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3834F921A879120005D1C19;
+			remoteInfo = GoogMorning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3834F931A879120005D1C19 /* GoogMorning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogMorning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3834F971A879120005D1C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3834F981A879120005D1C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3834F9A1A879120005D1C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3834F9D1A879120005D1C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3834F9F1A879120005D1C19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3834FA21A879120005D1C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D3834FA81A879120005D1C19 /* GoogMorningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogMorningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3834FAD1A879120005D1C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3834FAE1A879120005D1C19 /* GoogMorningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogMorningTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3834F901A879120005D1C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3834FA51A879120005D1C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3834F8A1A87911F005D1C19 = {
+			isa = PBXGroup;
+			children = (
+				D3834F951A879120005D1C19 /* GoogMorning */,
+				D3834FAB1A879120005D1C19 /* GoogMorningTests */,
+				D3834F941A879120005D1C19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3834F941A879120005D1C19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3834F931A879120005D1C19 /* GoogMorning.app */,
+				D3834FA81A879120005D1C19 /* GoogMorningTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3834F951A879120005D1C19 /* GoogMorning */ = {
+			isa = PBXGroup;
+			children = (
+				D3834F981A879120005D1C19 /* AppDelegate.swift */,
+				D3834F9A1A879120005D1C19 /* ViewController.swift */,
+				D3834F9C1A879120005D1C19 /* Main.storyboard */,
+				D3834F9F1A879120005D1C19 /* Images.xcassets */,
+				D3834FA11A879120005D1C19 /* LaunchScreen.xib */,
+				D3834F961A879120005D1C19 /* Supporting Files */,
+			);
+			path = GoogMorning;
+			sourceTree = "<group>";
+		};
+		D3834F961A879120005D1C19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3834F971A879120005D1C19 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3834FAB1A879120005D1C19 /* GoogMorningTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3834FAE1A879120005D1C19 /* GoogMorningTests.swift */,
+				D3834FAC1A879120005D1C19 /* Supporting Files */,
+			);
+			path = GoogMorningTests;
+			sourceTree = "<group>";
+		};
+		D3834FAC1A879120005D1C19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3834FAD1A879120005D1C19 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3834F921A879120005D1C19 /* GoogMorning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3834FB21A879120005D1C19 /* Build configuration list for PBXNativeTarget "GoogMorning" */;
+			buildPhases = (
+				D3834F8F1A879120005D1C19 /* Sources */,
+				D3834F901A879120005D1C19 /* Frameworks */,
+				D3834F911A879120005D1C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogMorning;
+			productName = GoogMorning;
+			productReference = D3834F931A879120005D1C19 /* GoogMorning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3834FA71A879120005D1C19 /* GoogMorningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3834FB51A879120005D1C19 /* Build configuration list for PBXNativeTarget "GoogMorningTests" */;
+			buildPhases = (
+				D3834FA41A879120005D1C19 /* Sources */,
+				D3834FA51A879120005D1C19 /* Frameworks */,
+				D3834FA61A879120005D1C19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3834FAA1A879120005D1C19 /* PBXTargetDependency */,
+			);
+			name = GoogMorningTests;
+			productName = GoogMorningTests;
+			productReference = D3834FA81A879120005D1C19 /* GoogMorningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3834F8B1A879120005D1C19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Alberto Banet Masa";
+				TargetAttributes = {
+					D3834F921A879120005D1C19 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D3834FA71A879120005D1C19 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D3834F921A879120005D1C19;
+					};
+				};
+			};
+			buildConfigurationList = D3834F8E1A879120005D1C19 /* Build configuration list for PBXProject "GoogMorning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3834F8A1A87911F005D1C19;
+			productRefGroup = D3834F941A879120005D1C19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3834F921A879120005D1C19 /* GoogMorning */,
+				D3834FA71A879120005D1C19 /* GoogMorningTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3834F911A879120005D1C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3834F9E1A879120005D1C19 /* Main.storyboard in Resources */,
+				D3834FA31A879120005D1C19 /* LaunchScreen.xib in Resources */,
+				D3834FA01A879120005D1C19 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3834FA61A879120005D1C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3834F8F1A879120005D1C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3834F9B1A879120005D1C19 /* ViewController.swift in Sources */,
+				D3834F991A879120005D1C19 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3834FA41A879120005D1C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3834FAF1A879120005D1C19 /* GoogMorningTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3834FAA1A879120005D1C19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3834F921A879120005D1C19 /* GoogMorning */;
+			targetProxy = D3834FA91A879120005D1C19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3834F9C1A879120005D1C19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3834F9D1A879120005D1C19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3834FA11A879120005D1C19 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3834FA21A879120005D1C19 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3834FB01A879120005D1C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3834FB11A879120005D1C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3834FB31A879120005D1C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoogMorning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3834FB41A879120005D1C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoogMorning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D3834FB61A879120005D1C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoogMorningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogMorning.app/GoogMorning";
+			};
+			name = Debug;
+		};
+		D3834FB71A879120005D1C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoogMorningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogMorning.app/GoogMorning";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3834F8E1A879120005D1C19 /* Build configuration list for PBXProject "GoogMorning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3834FB01A879120005D1C19 /* Debug */,
+				D3834FB11A879120005D1C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3834FB21A879120005D1C19 /* Build configuration list for PBXNativeTarget "GoogMorning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3834FB31A879120005D1C19 /* Debug */,
+				D3834FB41A879120005D1C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D3834FB51A879120005D1C19 /* Build configuration list for PBXNativeTarget "GoogMorningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3834FB61A879120005D1C19 /* Debug */,
+				D3834FB71A879120005D1C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3834F8B1A879120005D1C19 /* Project object */;
+}
