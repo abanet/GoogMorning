@@ -28,9 +28,16 @@ class ParseFotos {
     }
     
     // Cargamos la tabla de fotos
-    // De momento cargamos todas. Después habrá que parametrizar para cargar las de un día, o un año, etc
+    
     func cargarFotos() {
+       
         var query = PFQuery(className:"GoodMorning");
+        
+        let dia = Dia()
+        // día de la semana para obtener sólo las fotos correspondientes al día que es hoy
+        query.whereKey("dia", equalTo:dia.hoyEsDiaDeNombre())
+        query.whereKey("visible", equalTo:true)
+        query.cachePolicy = kPFCachePolicyNetworkElseCache
         query.findObjectsInBackgroundWithBlock {
             (objects:[AnyObject]!, error:NSError!)->() in
             
@@ -40,7 +47,7 @@ class ParseFotos {
                 // Do something with the found objects
                 for object in objects {
                     NSLog("%@", object.objectId)
-                    self.arrayFotos.append(object as PFObject)
+                    self.arrayFotos.append(object as! PFObject)
                 }
                 self.delegate?.fotosCargadas()
             } else {
@@ -55,5 +62,6 @@ class ParseFotos {
     func goodMorningForIndexPath(indexPath: NSIndexPath) -> PFObject {
         return arrayFotos[indexPath.row]
     }
+    
     
 }
