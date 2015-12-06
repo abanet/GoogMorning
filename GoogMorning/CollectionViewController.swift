@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 Alberto Banet Masa. All rights reserved.
 //
 
+// TODO:
+// La caché de las imágenes hacen que la app ocupe cada vez más espacio. ¿Cómo corregir esto?
+
 import UIKit
+import ParseUI
 
 class CollectionViewController: UICollectionViewController, protocoloParseFotos {
 
@@ -65,14 +69,27 @@ class CollectionViewController: UICollectionViewController, protocoloParseFotos 
         
         // Descargar la imagen a mostrar
         let buenosDiasActual = objetosFotos[indexPath.row] as! PFObject
-        let imagenFile = buenosDiasActual["foto"] as! PFFile
-        imagenFile.getDataInBackgroundWithBlock {
-            (imageData: NSData!, error: NSError!)->() in
+        
+        // 1.- Cargamos imágenes como PFFile
+//        let imagenFile = buenosDiasActual["foto"] as! PFFile
+//        imagenFile.getDataInBackgroundWithBlock {
+//            (imageData: NSData!, error: NSError!)->() in
+//            if error == nil {
+//                if let imagen = UIImage(data:imageData) {
+//                    cell.imagenView.image = imagen
+//                }
+//            }
+//        }
+        
+        // 2.- Cargamos imágenes como PFImageView()
+        let imagenView = PFImageView()
+        imagenView.image = UIImage(named: buenosDiasActual.objectId)
+        let imagenFile: PFFile = buenosDiasActual.objectForKey("foto") as! PFFile
+        imagenView.file = imagenFile
+        imagenView.loadInBackground {(imagen: UIImage!, error: NSError!)->Void in
             if error == nil {
-                if let imagen = UIImage(data:imageData) {
-                    cell.imagenView.image = imagen
-                }
-            }
+                 cell.imagenView.image = imagen
+                 }
         }
         return cell
     }

@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import GoogleMobileAds
+import ParseUI
 
-class DetailViewController: UIViewController, protocoloParseFrases {
+class DetailViewController: UIViewController, protocoloParseFrases, GADBannerViewDelegate {
 
     @IBOutlet var viewFotoBuenosDias: UIImageView!
     @IBOutlet var frase: UILabel!
     @IBOutlet weak var btnCompartir: UIBarButtonItem!
+    @IBOutlet var bannerView: GADBannerView!
+    
+    @IBOutlet var bannerViewBottonSpaceConstrain: NSLayoutConstraint!
     
     var fotoSegue: PFObject?
     private var parseFrases: ParseFrases!
@@ -28,8 +33,12 @@ class DetailViewController: UIViewController, protocoloParseFrases {
         siguienteAnimacionTextoOn = true
         self.frase.text = ""
         
-        
-        
+        // Publicidad
+        // TODO: el id es el de raywenderlich
+        bannerView.adUnitID = "ca-app-pub-3455028088714350/4838990629"
+        bannerView.delegate = self
+        bannerView.rootViewController = self
+        bannerView.loadRequest(GADRequest())
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -41,16 +50,29 @@ class DetailViewController: UIViewController, protocoloParseFrases {
         
         if let objetoSegue = fotoSegue {
            // frase.text = objetoSegue["fraseEng"] as String!
-            let imagenPFFile = objetoSegue["foto"] as! PFFile
-            imagenPFFile.getDataInBackgroundWithBlock {
-                (imageData: NSData!, error: NSError!)->() in
+            
+            // 1.- Carga de imagen como PFFile
+//            let imagenPFFile = objetoSegue["foto"] as! PFFile
+//            imagenPFFile.getDataInBackgroundWithBlock {
+//                (imageData: NSData!, error: NSError!)->() in
+//                if error == nil {
+//                    if let imagen = UIImage(data:imageData) {
+//                         self.viewFotoBuenosDias.image = imagen
+//                        
+//                    }
+//                }
+//            }
+            // 2.- Carga de imágen como PFImageView().- Realiza caché local en móvil.
+            let imagenView = PFImageView()
+            imagenView.image = UIImage(named: objetoSegue.objectId)
+            let imagenFile: PFFile = objetoSegue.objectForKey("foto") as! PFFile
+            imagenView.file = imagenFile
+            imagenView.loadInBackground {(imagen: UIImage!, error: NSError!)->Void in
                 if error == nil {
-                    if let imagen = UIImage(data:imageData) {
-                         self.viewFotoBuenosDias.image = imagen
-                        
-                    }
+                    self.viewFotoBuenosDias.image = imagen
                 }
             }
+
         }
         
         
@@ -123,5 +145,27 @@ class DetailViewController: UIViewController, protocoloParseFrases {
             siguienteAnimacionTextoOn = !siguienteAnimacionTextoOn
         }
     }
+    
+    // MARK: AdGoogle
+    func adView(view: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        if bannerViewBottonSpaceConstrain.constant == 0 {
+            UIView.animateWithDuration(0.25, animations: { () -> Void in
+                self.bannerViewBottonSpaceConstrain.constant = -CGRectGetHeight(self.bannerView.bounds)
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
+    
+    func adViewDidReceiveAd(view: GADBannerView!) {
+        if bannerViewBottonSpaceConstrain.constant != 0 {
+            UIView.animateWithDuration(0.25, animations: { ()->Void in
+                self.bannerViewBottonSpaceConstrain.constant = 0
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
+    
     
    }
