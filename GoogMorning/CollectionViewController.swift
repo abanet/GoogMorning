@@ -58,7 +58,7 @@ class CollectionViewController: UICollectionViewController, protocoloParseFotos 
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        println("número de objetosFotos: \(parseFotos.numFotos)")
+        print("número de objetosFotos: \(parseFotos.numFotos)")
         return parseFotos.numFotos
     }
     
@@ -88,8 +88,10 @@ class CollectionViewController: UICollectionViewController, protocoloParseFotos 
         imagenView.file = imagenFile
         imagenView.loadInBackground {(imagen: UIImage!, error: NSError!)->Void in
             if error == nil {
+                dispatch_async(dispatch_get_main_queue()) {
                  cell.imagenView.image = imagen
-                 }
+                }
+                }
         }
         return cell
     }

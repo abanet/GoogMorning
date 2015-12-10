@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mW6-gw-MeF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mW6-gw-MeF">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -13,6 +13,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TD6-4E-Eg9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="N9b-80-s41">
                             <size key="itemSize" width="200" height="200"/>
@@ -22,7 +23,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="O5p-vR-Qj8" customClass="GoodMorningViewCell" customModule="GoogMorning" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="64" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -30,10 +31,13 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tdI-HT-AIs">
                                             <rect key="frame" x="2" y="2" width="196" height="196"/>
+                                            <animations/>
                                         </imageView>
                                     </subviews>
+                                    <animations/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="tdI-HT-AIs" firstAttribute="leading" secondItem="O5p-vR-Qj8" secondAttribute="leading" constant="2" id="SSG-Dy-9td"/>
@@ -73,16 +77,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LES-Ya-0LD">
-                                <rect key="frame" x="16" y="64" width="568" height="536"/>
+                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                                <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="1xE-0F-vJq">
                                 <rect key="frame" x="8" y="275" width="584" height="50"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHY-CW-HsF" customClass="GADBannerView">
                                 <rect key="frame" x="0.0" y="556" width="600" height="50"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9ev-PY-sX4"/>
@@ -93,6 +100,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bHY-CW-HsF" secondAttribute="trailing" id="6Fg-m4-A49"/>
@@ -107,10 +115,10 @@
                             <constraint firstItem="bHY-CW-HsF" firstAttribute="leading" secondItem="Kvp-Uz-J8b" secondAttribute="leading" id="aah-8i-XNc"/>
                             <constraint firstAttribute="centerY" secondItem="1xE-0F-vJq" secondAttribute="centerY" id="fbH-8X-bVC"/>
                             <constraint firstItem="LES-Ya-0LD" firstAttribute="top" secondItem="L2d-yM-pSr" secondAttribute="bottom" id="gp3-CN-Yf7"/>
-                            <constraint firstAttribute="trailing" secondItem="LES-Ya-0LD" secondAttribute="trailing" constant="16" id="mfn-Ow-bx7"/>
+                            <constraint firstAttribute="trailing" secondItem="LES-Ya-0LD" secondAttribute="trailing" constant="20" symbolic="YES" id="mfn-Ow-bx7"/>
                             <constraint firstItem="yU3-HV-ePg" firstAttribute="top" secondItem="1xE-0F-vJq" secondAttribute="bottom" constant="8" id="rXG-Ac-3c1"/>
                             <constraint firstItem="LES-Ya-0LD" firstAttribute="top" secondItem="L2d-yM-pSr" secondAttribute="bottom" id="rgB-xS-sml"/>
-                            <constraint firstItem="LES-Ya-0LD" firstAttribute="leading" secondItem="Kvp-Uz-J8b" secondAttribute="leading" constant="16" id="xL8-R8-V2k"/>
+                            <constraint firstItem="LES-Ya-0LD" firstAttribute="leading" secondItem="Kvp-Uz-J8b" secondAttribute="leading" constant="20" symbolic="YES" id="xL8-R8-V2k"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -148,10 +156,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="odZ-H3-YXb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ElY-nx-V59">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </toolbar>
                     <connections>
                         <segue destination="9ot-t0-gkL" kind="relationship" relationship="rootViewController" id="sDJ-rz-nnn"/>
