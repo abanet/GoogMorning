@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Color general de la app
         window?.tintColor = themeColor
-        var navigationBarAppearace = UINavigationBar.appearance()
+        let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: themeColor]
         // Override point for customization after application launch.
         return true

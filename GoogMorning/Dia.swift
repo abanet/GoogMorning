@@ -13,7 +13,7 @@ class Dia {
     
     func getDayOfWeek()->Int {
         let myCalendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
-        let myComponents = myCalendar?.components(.WeekdayCalendarUnit, fromDate: NSDate())
+        let myComponents = myCalendar?.components(.NSWeekdayCalendarUnit, fromDate: NSDate())
         let weekDay = myComponents?.weekday
         return weekDay!
     }

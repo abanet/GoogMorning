@@ -31,7 +31,7 @@ class ParseFrases {
     // Cargamos la tabla de frases
     // De momento cargamos todas. Después habrá que parametrizar para cargar las de un día, o un año, etc
     func cargarFrases() {
-        var query = PFQuery(className:"Frases");
+        let query = PFQuery(className:"Frases");
         query.cachePolicy = kPFCachePolicyNetworkElseCache
         query.findObjectsInBackgroundWithBlock {
             (objects:[AnyObject]!, error:NSError!)->() in
@@ -47,7 +47,7 @@ class ParseFrases {
                 self.delegate?.frasesCargadas()
             } else {
                 // Log details of the failure
-                NSLog("Error: %@ %@", error, error.userInfo!)
+                NSLog("Error: %@ %@", error, error.userInfo)
             }
             
         }

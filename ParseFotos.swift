@@ -31,7 +31,7 @@ class ParseFotos {
     
     func cargarFotos() {
        
-        var query = PFQuery(className:"GoodMorning");
+        let query = PFQuery(className:"GoodMorning");
         
         let dia = Dia()
         // día de la semana para obtener sólo las fotos correspondientes al día que es hoy
@@ -52,7 +52,7 @@ class ParseFotos {
                 self.delegate?.fotosCargadas()
             } else {
                 // Log details of the failure
-                NSLog("Error: %@ %@", error, error.userInfo!)
+                NSLog("Error: %@ %@", error, error.userInfo)
             }
         
         }

@@ -96,7 +96,7 @@ class DetailViewController: UIViewController, protocoloParseFrases, GADBannerVie
     
     func animarTextoDurante(segundos: NSTimeInterval, delay: NSTimeInterval, alfaFinal: CGFloat){
         self.animacionMarcha = true
-        UIView.animateWithDuration(segundos, delay: delay, options: nil, animations: {
+        UIView.animateWithDuration(segundos, delay: delay, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.frase.alpha = alfaFinal
             }, completion: {(completed: Bool) in
                 if(completed){
@@ -108,7 +108,7 @@ class DetailViewController: UIViewController, protocoloParseFrases, GADBannerVie
     
     func animarImagenDurante(segundos: NSTimeInterval, delay: NSTimeInterval, alfaFinal: CGFloat){
         self.animacionMarcha = true
-        UIView.animateWithDuration(segundos, delay: delay, options:nil, animations: {
+        UIView.animateWithDuration(segundos, delay: delay, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.viewFotoBuenosDias.alpha = alfaFinal
             }, completion: {(completed: Bool) in
                 if(completed){
@@ -133,7 +133,7 @@ class DetailViewController: UIViewController, protocoloParseFrases, GADBannerVie
         animarTextoDurante(3.0, delay: 3.0, alfaFinal: 0.0)
     }
     
-    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if(!self.animacionMarcha){
             if(!self.siguienteAnimacionTextoOn){
                 animarTextoDurante(3.0, delay: 0.0 , alfaFinal: 0.0)
