@@ -7,17 +7,17 @@
 //
 
 import UIKit
-import GoogleMobileAds
 import ParseUI
+//import GoogleMobileAds
 
-class DetailViewController: UIViewController, protocoloParseFrases, GADBannerViewDelegate {
+class DetailViewController: UIViewController, protocoloParseFrases { // , GADBannerViewDelegate
 
     @IBOutlet var viewFotoBuenosDias: UIImageView!
     @IBOutlet var frase: UILabel!
     @IBOutlet weak var btnCompartir: UIBarButtonItem!
-    @IBOutlet var bannerView: GADBannerView!
+    //@IBOutlet var bannerView: GADBannerView!
     
-    @IBOutlet var bannerViewBottonSpaceConstrain: NSLayoutConstraint!
+    //@IBOutlet var bannerViewBottonSpaceConstrain: NSLayoutConstraint!
     
     var fotoSegue: PFObject?
     private var parseFrases: ParseFrases!
@@ -35,10 +35,10 @@ class DetailViewController: UIViewController, protocoloParseFrases, GADBannerVie
         
         // Publicidad
         // TODO: el id es el de raywenderlich
-        bannerView.adUnitID = "ca-app-pub-3455028088714350/4838990629"
-        bannerView.delegate = self
-        bannerView.rootViewController = self
-        bannerView.loadRequest(GADRequest())
+//        bannerView.adUnitID = "ca-app-pub-3455028088714350/4838990629"
+//        bannerView.delegate = self
+//        bannerView.rootViewController = self
+//        bannerView.loadRequest(GADRequest())
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -147,24 +147,24 @@ class DetailViewController: UIViewController, protocoloParseFrases, GADBannerVie
     }
     
     // MARK: AdGoogle
-    func adView(view: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
-        if bannerViewBottonSpaceConstrain.constant == 0 {
-            UIView.animateWithDuration(0.25, animations: { () -> Void in
-                self.bannerViewBottonSpaceConstrain.constant = -CGRectGetHeight(self.bannerView.bounds)
-                self.view.layoutIfNeeded()
-            })
-        }
-    }
-    
-    
-    func adViewDidReceiveAd(view: GADBannerView!) {
-        if bannerViewBottonSpaceConstrain.constant != 0 {
-            UIView.animateWithDuration(0.25, animations: { ()->Void in
-                self.bannerViewBottonSpaceConstrain.constant = 0
-                self.view.layoutIfNeeded()
-            })
-        }
-    }
+//    func adView(view: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+//        if bannerViewBottonSpaceConstrain.constant == 0 {
+//            UIView.animateWithDuration(0.25, animations: { () -> Void in
+//                self.bannerViewBottonSpaceConstrain.constant = -CGRectGetHeight(self.bannerView.bounds)
+//                self.view.layoutIfNeeded()
+//            })
+//        }
+//    }
+//    
+//    
+//    func adViewDidReceiveAd(view: GADBannerView!) {
+//        if bannerViewBottonSpaceConstrain.constant != 0 {
+//            UIView.animateWithDuration(0.25, animations: { ()->Void in
+//                self.bannerViewBottonSpaceConstrain.constant = 0
+//                self.view.layoutIfNeeded()
+//            })
+//        }
+//    }
     
     
     

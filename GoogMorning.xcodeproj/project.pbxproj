@@ -9,15 +9,12 @@
 /* Begin PBXBuildFile section */
 		C0B2B0CA1ADBC3360068FC52 /* MMMWhatsAppActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B2B0C81ADBC3360068FC52 /* MMMWhatsAppActivity.m */; };
 		D3095BBF1ABCBAEE00FA7A39 /* ParseFrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3095BBE1ABCBAEE00FA7A39 /* ParseFrases.swift */; };
-		D3139DB61B3DDBAA00D4FF86 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3139DB51B3DDBAA00D4FF86 /* GoogleMobileAds.framework */; };
-		D3139DB81B3DDBE900D4FF86 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3139DB71B3DDBE900D4FF86 /* AdSupport.framework */; };
 		D3139DBA1B3DDBF900D4FF86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3139DB91B3DDBF900D4FF86 /* AVFoundation.framework */; };
 		D3139DBC1B3DDC0800D4FF86 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3139DBB1B3DDC0800D4FF86 /* CoreMedia.framework */; };
 		D3139DBE1B3DDC1300D4FF86 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3139DBD1B3DDC1300D4FF86 /* CoreTelephony.framework */; };
 		D3139DC11B3DDC2400D4FF86 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3139DBF1B3DDC2400D4FF86 /* EventKit.framework */; };
 		D3139DC21B3DDC2400D4FF86 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3139DC01B3DDC2400D4FF86 /* EventKitUI.framework */; };
 		D3139DC41B3DDC2F00D4FF86 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3139DC31B3DDC2F00D4FF86 /* MessageUI.framework */; };
-		D3139DC61B3DDFED00D4FF86 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3139DC51B3DDFED00D4FF86 /* iAd.framework */; };
 		D358883C1ADC30EB00BA7BAE /* whatsapp.png in Resources */ = {isa = PBXBuildFile; fileRef = D358883A1ADC30EB00BA7BAE /* whatsapp.png */; };
 		D358883D1ADC30EB00BA7BAE /* whatsapp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D358883B1ADC30EB00BA7BAE /* whatsapp@2x.png */; };
 		D358883F1ADC365500BA7BAE /* Dia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D358883E1ADC365500BA7BAE /* Dia.swift */; };
@@ -63,15 +60,12 @@
 		C0B2B0C81ADBC3360068FC52 /* MMMWhatsAppActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMWhatsAppActivity.m; sourceTree = "<group>"; };
 		C0B2B0C91ADBC3360068FC52 /* MMMWhatsAppActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMWhatsAppActivity.h; sourceTree = "<group>"; };
 		D3095BBE1ABCBAEE00FA7A39 /* ParseFrases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseFrases.swift; sourceTree = "<group>"; };
-		D3139DB51B3DDBAA00D4FF86 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		D3139DB71B3DDBE900D4FF86 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		D3139DB91B3DDBF900D4FF86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D3139DBB1B3DDC0800D4FF86 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D3139DBD1B3DDC1300D4FF86 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D3139DBF1B3DDC2400D4FF86 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		D3139DC01B3DDC2400D4FF86 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		D3139DC31B3DDC2F00D4FF86 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		D3139DC51B3DDFED00D4FF86 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		D358883A1ADC30EB00BA7BAE /* whatsapp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whatsapp.png; sourceTree = "<group>"; };
 		D358883B1ADC30EB00BA7BAE /* whatsapp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whatsapp@2x.png"; sourceTree = "<group>"; };
 		D358883E1ADC365500BA7BAE /* Dia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dia.swift; sourceTree = "<group>"; };
@@ -115,14 +109,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3139DC61B3DDFED00D4FF86 /* iAd.framework in Frameworks */,
 				D3139DC41B3DDC2F00D4FF86 /* MessageUI.framework in Frameworks */,
 				D3139DC11B3DDC2400D4FF86 /* EventKit.framework in Frameworks */,
 				D3139DC21B3DDC2400D4FF86 /* EventKitUI.framework in Frameworks */,
 				D3139DBE1B3DDC1300D4FF86 /* CoreTelephony.framework in Frameworks */,
 				D3139DBC1B3DDC0800D4FF86 /* CoreMedia.framework in Frameworks */,
 				D3139DBA1B3DDBF900D4FF86 /* AVFoundation.framework in Frameworks */,
-				D3139DB81B3DDBE900D4FF86 /* AdSupport.framework in Frameworks */,
 				D37B1CA41A879B87006D39B0 /* libsqlite3.dylib in Frameworks */,
 				D37B1CA21A879B7C006D39B0 /* libz.dylib in Frameworks */,
 				D37B1CA01A879B73006D39B0 /* SystemConfiguration.framework in Frameworks */,
@@ -138,7 +130,6 @@
 				D37B1C8C1A879AE1006D39B0 /* ParseCrashReporting.framework in Frameworks */,
 				D37B1C8E1A879AE1006D39B0 /* ParseUI.framework in Frameworks */,
 				D37B1C8D1A879AE1006D39B0 /* ParseFacebookUtils.framework in Frameworks */,
-				D3139DB61B3DDBAA00D4FF86 /* GoogleMobileAds.framework in Frameworks */,
 				D37B1C871A879AD2006D39B0 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,15 +158,12 @@
 		D37B1C841A879AB3006D39B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D3139DC51B3DDFED00D4FF86 /* iAd.framework */,
 				D3139DC31B3DDC2F00D4FF86 /* MessageUI.framework */,
 				D3139DBF1B3DDC2400D4FF86 /* EventKit.framework */,
 				D3139DC01B3DDC2400D4FF86 /* EventKitUI.framework */,
 				D3139DBD1B3DDC1300D4FF86 /* CoreTelephony.framework */,
 				D3139DBB1B3DDC0800D4FF86 /* CoreMedia.framework */,
 				D3139DB91B3DDBF900D4FF86 /* AVFoundation.framework */,
-				D3139DB71B3DDBE900D4FF86 /* AdSupport.framework */,
-				D3139DB51B3DDBAA00D4FF86 /* GoogleMobileAds.framework */,
 				D37B1CA31A879B87006D39B0 /* libsqlite3.dylib */,
 				D37B1CA11A879B7C006D39B0 /* libz.dylib */,
 				D37B1C9F1A879B73006D39B0 /* SystemConfiguration.framework */,
@@ -507,7 +495,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -531,7 +519,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
