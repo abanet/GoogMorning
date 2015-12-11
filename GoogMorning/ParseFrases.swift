@@ -30,7 +30,7 @@ class ParseFrases {
     
     // Cargamos la tabla de frases
     // De momento cargamos todas. Después habrá que parametrizar para cargar las de un día, o un año, etc
-    func cargarFrases() {
+    private func cargarFrases() {
         let query = PFQuery(className:"Frases");
         query.cachePolicy = kPFCachePolicyNetworkElseCache
         query.findObjectsInBackgroundWithBlock {
@@ -41,8 +41,11 @@ class ParseFrases {
                 NSLog("Successfully retrieved \(objects.count) scores.")
                 // Do something with the found objects
                 for object in objects {
-                    NSLog("%@", object.objectId)
-                    self.arrayFrases.append(object as! PFObject)
+                    if let visible = object["disponible"] as? Bool {
+                        if visible {
+                            self.arrayFrases.append(object as! PFObject)
+                        }
+                    }
                 }
                 self.delegate?.frasesCargadas()
             } else {

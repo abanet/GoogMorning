@@ -75,8 +75,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LES-Ya-0LD">
                                 <rect key="frame" x="20" y="64" width="560" height="536"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="1xE-0F-vJq">
-                                <rect key="frame" x="8" y="275" width="584" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1xE-0F-vJq">
+                                <rect key="frame" x="20" y="72" width="560" height="484"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,21 +87,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="LES-Ya-0LD" secondAttribute="trailing" id="7To-eg-MfF"/>
                             <constraint firstAttribute="bottom" secondItem="LES-Ya-0LD" secondAttribute="bottom" id="Aja-vc-Run"/>
                             <constraint firstAttribute="centerX" secondItem="1xE-0F-vJq" secondAttribute="centerX" id="BxX-DK-3SU"/>
-                            <constraint firstItem="1xE-0F-vJq" firstAttribute="top" secondItem="L2d-yM-pSr" secondAttribute="bottom" constant="8" id="FlH-xy-iUi"/>
-                            <constraint firstAttribute="trailing" secondItem="1xE-0F-vJq" secondAttribute="trailing" constant="8" id="JLU-L7-sUJ"/>
-                            <constraint firstItem="1xE-0F-vJq" firstAttribute="leading" secondItem="Kvp-Uz-J8b" secondAttribute="leading" constant="8" id="KgI-Oa-dw5"/>
+                            <constraint firstAttribute="trailing" secondItem="1xE-0F-vJq" secondAttribute="trailing" constant="20" symbolic="YES" id="JLU-L7-sUJ"/>
+                            <constraint firstItem="1xE-0F-vJq" firstAttribute="leading" secondItem="Kvp-Uz-J8b" secondAttribute="leading" constant="20" symbolic="YES" id="KgI-Oa-dw5"/>
                             <constraint firstItem="LES-Ya-0LD" firstAttribute="leading" secondItem="Kvp-Uz-J8b" secondAttribute="leadingMargin" id="QhV-FE-crJ"/>
+                            <constraint firstItem="1xE-0F-vJq" firstAttribute="top" secondItem="L2d-yM-pSr" secondAttribute="bottom" constant="8" symbolic="YES" id="RTK-H8-6fn"/>
                             <constraint firstAttribute="centerY" secondItem="1xE-0F-vJq" secondAttribute="centerY" id="fbH-8X-bVC"/>
-                            <constraint firstItem="LES-Ya-0LD" firstAttribute="top" secondItem="L2d-yM-pSr" secondAttribute="bottom" id="gp3-CN-Yf7"/>
                             <constraint firstAttribute="trailing" secondItem="LES-Ya-0LD" secondAttribute="trailing" constant="20" symbolic="YES" id="mfn-Ow-bx7"/>
-                            <constraint firstItem="yU3-HV-ePg" firstAttribute="top" secondItem="1xE-0F-vJq" secondAttribute="bottom" constant="8" id="rXG-Ac-3c1"/>
+                            <constraint firstItem="yU3-HV-ePg" firstAttribute="top" secondItem="1xE-0F-vJq" secondAttribute="bottom" id="r76-ax-Rsd"/>
                             <constraint firstItem="LES-Ya-0LD" firstAttribute="top" secondItem="L2d-yM-pSr" secondAttribute="bottom" id="rgB-xS-sml"/>
                             <constraint firstItem="LES-Ya-0LD" firstAttribute="leading" secondItem="Kvp-Uz-J8b" secondAttribute="leading" constant="20" symbolic="YES" id="xL8-R8-V2k"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="FlH-xy-iUi"/>
-                                <exclude reference="rXG-Ac-3c1"/>
+                                <exclude reference="fbH-8X-bVC"/>
                             </mask>
                         </variation>
                     </view>

@@ -42,6 +42,9 @@ class CollectionViewController: UICollectionViewController, protocoloParseFotos 
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        // Oculto la barra de herrientas al mostrar esta pantalla
+        self.navigationController?.setToolbarHidden(true, animated: true)
         // Si ha cambiado de día hay que volver a cargar las fotografías
         let dia = Dia()
         if dia.hoyEsDiaDeNombre() != diaActual {
@@ -51,6 +54,12 @@ class CollectionViewController: UICollectionViewController, protocoloParseFotos 
             self.diaActual = dia.hoyEsDiaDeNombre()
         }
         
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Al irnos volvemos a mostrar la barra de herramientas
+        self.navigationController?.setToolbarHidden(false, animated: true)
     }
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -84,6 +93,7 @@ class CollectionViewController: UICollectionViewController, protocoloParseFotos 
         // 2.- Cargamos imágenes como PFImageView()
         let imagenView = PFImageView()
         imagenView.image = UIImage(named: buenosDiasActual.objectId)
+        
         let imagenFile: PFFile = buenosDiasActual.objectForKey("foto") as! PFFile
         imagenView.file = imagenFile
         imagenView.loadInBackground {(imagen: UIImage!, error: NSError!)->Void in

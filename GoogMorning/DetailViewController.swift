@@ -44,6 +44,8 @@ class DetailViewController: UIViewController, protocoloParseFrases { // , GADBan
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.navigationController?.setToolbarHidden(false, animated: true)
+        
         self.btnCompartir.enabled = false
         self.frase.alpha = 0
         self.viewFotoBuenosDias.alpha = 0
@@ -75,8 +77,12 @@ class DetailViewController: UIViewController, protocoloParseFrases { // , GADBan
 
         }
         
-        
 }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setToolbarHidden(true, animated: true)
+    }
 
     // Compartir imagen y frase con las redes sociales
     @IBAction func compartirRedesSociales(sender: AnyObject) {

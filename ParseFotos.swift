@@ -46,7 +46,7 @@ class ParseFotos {
                 NSLog("Successfully retrieved \(objects.count) scores.")
                 // Do something with the found objects
                 for object in objects {
-                    NSLog("%@", object.objectId)
+                    //NSLog("%@", object.objectId)
                     self.arrayFotos.append(object as! PFObject)
                 }
                 self.delegate?.fotosCargadas()
