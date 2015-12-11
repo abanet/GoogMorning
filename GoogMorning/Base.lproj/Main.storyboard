@@ -99,6 +99,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="7To-eg-MfF"/>
+                                <exclude reference="QhV-FE-crJ"/>
                                 <exclude reference="fbH-8X-bVC"/>
                             </mask>
                         </variation>
