@@ -108,10 +108,8 @@ class CollectionViewController: UICollectionViewController, protocoloParseFotos 
     
     func fotosCargadas() {
         if let coleccion = self.collectionView {
-            dispatch_async(dispatch_get_main_queue()) {
                 self.objetosFotos = self.parseFotos.arrayFotos
                 coleccion.reloadData()
-        }
         }
     }
     
