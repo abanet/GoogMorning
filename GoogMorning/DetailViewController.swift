@@ -92,11 +92,31 @@ class DetailViewController: UIViewController, protocoloParseFrases { // , GADBan
         let fraseYautor: String = self.frase.text! + " [\(autorFrase!)]"
         let objetosACompartir: [AnyObject!] = [fraseYautor, self.viewFotoBuenosDias.image, NSURL(string: NSLocalizedString("appURL", comment:"url de la app en el applestore"))]
         let activityController = UIActivityViewController(activityItems: objetosACompartir, applicationActivities: [wsActivity])
-        activityController.excludedActivityTypes =  [
-            UIActivityTypePostToWeibo,
-            UIActivityTypeAssignToContact,
-            UIActivityTypeSaveToCameraRoll,
-            UIActivityTypeAddToReadingList]
+        if #available(iOS 9.0, *) {
+            activityController.excludedActivityTypes =  [
+                UIActivityTypePostToWeibo,
+                UIActivityTypeAssignToContact,
+                UIActivityTypeSaveToCameraRoll,
+                UIActivityTypeAddToReadingList,
+                UIActivityTypeOpenInIBooks,
+                UIActivityTypeMessage,
+                UIActivityTypeMail,
+                UIActivityTypePrint,
+                UIActivityTypeCopyToPasteboard,
+                UIActivityTypeAssignToContact]
+        } else {
+            // Fallback on earlier versions
+            activityController.excludedActivityTypes =  [
+                UIActivityTypePostToWeibo,
+                UIActivityTypeAssignToContact,
+                UIActivityTypeSaveToCameraRoll,
+                UIActivityTypeAddToReadingList,
+                UIActivityTypeMessage,
+                UIActivityTypeMail,
+                UIActivityTypePrint,
+                UIActivityTypeCopyToPasteboard,
+                UIActivityTypeAssignToContact]
+        }
         self.presentViewController(activityController, animated: true, completion: nil)    }
     
     
